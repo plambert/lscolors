@@ -9,7 +9,7 @@
   <meta name="author" content="Geoff Greer" />
   <meta name="viewport" content="width=760" />
   <link type="text/css" href="lscolors.css" rel="stylesheet" />
-  <link id="main-css" rel="stylesheet" type="text/css" media="all" href="main.css" />
+  <link id="main-css" rel="stylesheet" type="text/css" media="all" href="/styles/main.css" />
   <script type="text/javascript" src="lscolors.js"></script>
 </head>
 <body onload="makePreview()">
@@ -18,8 +18,8 @@
   var _gaq = _gaq || [];
   var main_css = document.getElementById("main-css");
   var styles = {
-    light: ["Light", "", "main.css", "solarized-light.css"],
-    dark: ["Dark", "#000", "main-inverted.css", "solarized-dark.css"]
+    light: ["Light", "", "/styles/main.css", "/styles/solarized-light.css"],
+    dark: ["Dark", "#000", "/styles/main-inverted.css", "/styles/solarized-dark.css"]
   };
   function set_style(style) {
     var date = new Date();
