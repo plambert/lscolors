@@ -168,6 +168,11 @@ function makePreview() {
 
   var colorStringLinux = translateColorToLinux(colorString);
   document.getElementById("colorStringLinux").value = colorStringLinux;
+  document.getElementById("caseStatement").value =
+    "case \"\$OSTYPE\" in\n" +
+    "  darwin* ) export LSCOLORS=\""+colorString+"\" ;;\n" +
+    "  * ) export LS_COLORS=\""+colorStringLinux+"\" ;;\n" +
+    "esac\n";
 
   for (i = 0; i < indexLength; i++) {
     colors[i] = colorString.charAt(i);
